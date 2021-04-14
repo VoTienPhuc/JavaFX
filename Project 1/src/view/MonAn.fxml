@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MonAnController">
+    <stylesheets>
+        <URL value="@/css/Style.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="745.0" prefWidth="1043.0">
+         <children>
+            <VBox layoutX="50.0" layoutY="130.0" prefHeight="195.0" prefWidth="172.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="171.0" text="Mã món">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="173.0" text="Tên Món">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="171.0" text="Đơn giá">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="173.0" text="Trạng thái">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="232.0" layoutY="130.0" prefHeight="158.0" prefWidth="230.0">
+               <children>
+                  <TextField fx:id="mamon" prefHeight="39.0" prefWidth="182.0" />
+                  <TextField fx:id="tenmon" prefHeight="39.0" prefWidth="182.0" />
+                  <TextField fx:id="dongia" prefHeight="39.0" prefWidth="182.0" />
+                  <TextField fx:id="trangthai" prefHeight="39.0" prefWidth="182.0" />
+               </children>
+            </VBox>
+            <HBox layoutX="50.0" layoutY="335.0" prefHeight="66.0" prefWidth="411.0" stylesheets="@../css/Style.css">
+               <children>
+                  <Button id="font-button" fx:id="btnInsert" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="68.0" prefWidth="131.0" styleClass="button1" stylesheets="@../css/Style.css" text="Insert">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button id="font-button" fx:id="btnUpdate" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="66.0" prefWidth="135.0" styleClass="button1" stylesheets="@../css/Style.css" text="Update">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button id="font-button" fx:id="btnDelete" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="65.0" prefWidth="143.0" styleClass="button1" stylesheets="@../css/Style.css" text="Delete">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="1015.0" text="Fast Food Management" textFill="#fc0000">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tbvMonAn" layoutX="493.0" layoutY="130.0" onMouseClicked="#handleMouseAction" prefHeight="272.0" prefWidth="543.0">
+               <columns>
+                  <TableColumn fx:id="MaMon" prefWidth="96.0" text="Mã Món" />
+                  <TableColumn fx:id="TenMon" prefWidth="190.0" text="Tên Món" />
+                  <TableColumn fx:id="DonGia" prefWidth="111.0" text="Đơn Giá" />
+                  <TableColumn fx:id="TrangThai" minWidth="0.0" prefWidth="93.0" text="Trạng Thái" />
+               </columns>
+            </TableView>
+            <Label fx:id="txtFullName" layoutX="684.0" layoutY="431.0" prefHeight="37.0" prefWidth="217.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

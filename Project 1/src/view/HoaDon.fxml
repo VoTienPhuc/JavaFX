@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.HoaDonController">
+    <stylesheets>
+        <URL value="@/css/Style.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="745.0" prefWidth="1043.0">
+         <children>
+            <VBox layoutX="50.0" layoutY="130.0" prefHeight="195.0" prefWidth="172.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="171.0" text="Mã hóa đơn">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="173.0" text="Mã NV">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="171.0" text="Tổng tiền">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="173.0" text="Ngày">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="173.0" text="Giờ">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="232.0" layoutY="130.0" prefHeight="195.0" prefWidth="230.0">
+               <children>
+                  <TextField fx:id="mahd" prefHeight="39.0" prefWidth="182.0" />
+                  <TextField fx:id="manv" prefHeight="39.0" prefWidth="182.0" />
+                  <TextField fx:id="tongtien" prefHeight="39.0" prefWidth="182.0" />
+                  <DatePicker fx:id="dpngay" prefHeight="39.0" prefWidth="230.0" />
+                  <TextField fx:id="gio" prefHeight="39.0" prefWidth="182.0" />
+               </children>
+            </VBox>
+            <HBox layoutX="50.0" layoutY="335.0" prefHeight="66.0" prefWidth="411.0" stylesheets="@../css/Style.css">
+               <children>
+                  <Button id="font-button" fx:id="btnInsert" mnemonicParsing="false" onAction="#handleActionButton" prefHeight="68.0" prefWidth="131.0" styleClass="button1" stylesheets="@../css/Style.css" text="Insert">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="70.0" prefWidth="1015.0" text="Fast Food Management" textFill="#fc0000">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tbvHoaDon" layoutX="493.0" layoutY="130.0" onMouseClicked="#handleMouseAction" prefHeight="272.0" prefWidth="543.0">
+               <columns>
+                  <TableColumn fx:id="MaHD" prefWidth="83.0" text="Mã hóa đơn" />
+                  <TableColumn fx:id="MaNV" prefWidth="92.0" text="Mã NV" />
+                  <TableColumn fx:id="TongTien" prefWidth="181.0" text="Tổng tiền" />
+                  <TableColumn fx:id="Ngay" minWidth="0.0" prefWidth="95.0" text="Ngày" />
+                  <TableColumn fx:id="Gio" minWidth="0.0" prefWidth="91.0" text="Giờ" />
+               </columns>
+            </TableView>
+            <Label fx:id="txtFullName" layoutX="684.0" layoutY="431.0" prefHeight="37.0" prefWidth="217.0" text="Label">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

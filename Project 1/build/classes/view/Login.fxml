@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label opacity="0.57" prefHeight="65.0" prefWidth="397.0" style="-fx-border-color: black;" text="Login">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="face" layoutX="79.0" layoutY="116.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: #4092F0;" text="Facebook" textFill="WHITE" />
+      <Button fx:id="twit" layoutX="210.0" layoutY="116.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: #46BFF0;" text="Twitter" textFill="WHITE" />
+      <TextField fx:id="username" layoutX="79.0" layoutY="168.0" prefHeight="34.0" prefWidth="243.0" promptText="User Name" />
+      <TextField fx:id="password" layoutX="79.0" layoutY="216.0" prefHeight="34.0" prefWidth="243.0" promptText="Password" />
+      <Hyperlink layoutX="79.0" layoutY="279.0" prefHeight="23.0" prefWidth="124.0" text="Forgotten Password?" textFill="#ff9721" />
+      <Button fx:id="btnLogin" layoutX="241.0" layoutY="274.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: orange;" text="Login" />
+   </children>
+</AnchorPane>

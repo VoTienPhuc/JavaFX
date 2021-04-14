@@ -1,0 +1,27 @@
+.button1{
+    -fx-text-fill: #006464;
+    -fx-background-color: #DFB951;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+#font-button:hover {
+    -fx-font: bold italic 20pt "Arial";
+    -fx-font-color:red;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+#font-button:visited {
+    -fx-font: bold italic 20pt "Arial";
+    -fx-font-color:blue;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+#font-button:focus {
+    -fx-font: bold italic 20pt "Arial";
+    -fx-font-color:green;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+#font-button:active {
+    -fx-font: bold italic 20pt "Arial";
+    -fx-font-color:yellow;
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
